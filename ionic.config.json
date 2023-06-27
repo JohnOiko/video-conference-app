@@ -1,0 +1,7 @@
+{
+  "name": "zoomProject",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
