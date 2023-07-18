@@ -1,6 +1,8 @@
 # video-conference-app
 Term project of my Mobile Device Interfaces university pregraduate class. The project is an ionic app which allows video playback with real time chat and can be accessed by browsers and mobile devices.
 
+The folowing is a report in Greek describing the way the app functions:
+
 Το Ionic app αυτού του ζητούμενου το έγραψα με τη χρήση του Angular framework που προσφέρει το Ionic. Πρώτα θα εξηγήσω συνοπτικά τον κώδικα με μερικά screenshots και μετά εξηγήσω πως λειτουργεί η εφαρμογή με screenshots από desktop, κινητό και ταμπλέτα.
 
 Η εφαρμογή έχει μόνο μια σελίδα, την home page. Οπότε έχω αλλάξει μόνο τον κώδικα αυτής της σελίδας. Αρχικά υπάρχει ένα embedded YouTube βίντεο στην αριστερή μεριά της οθόνης όταν η οθόνη είναι μεγάλη ή μέτρια σε πλάτος, αλλιώς στο κέντρο της αν η οθόνη είναι μικρή σε πλάτος. Το βίντεο που είναι embedded είναι αυτό: https://www.youtube.com/watch?v=6xaaeop7gJ8.
