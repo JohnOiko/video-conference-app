@@ -1,20 +1,70 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-content fullscreen="true">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="9" size-xl="9" style="padding: 0 !important;">
+          <ion-card>
+            <ion-card-content style="text-align: center;">
+              <iframe src="https://www.youtube.com/embed/6xaaeop7gJ8" title="Signals and Systems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </ion-card-content>
+          </ion-card>
+          <ion-card style="margin-bottom: 0;">
+            <ion-item>
+                <ion-avatar id="currentUserAvatar" slot="start"><img src="https://cdn.icon-icons.com/icons2/1879/PNG/512/iconfinder-7-avatar-2754582_120519.png"/></ion-avatar>
+              <ion-textarea style="height: 0vh;" [(ngModel)]="chatMessage" aria-label="Chat message" placeholder="Say something..."></ion-textarea>
+              <ion-button (click)="sendMessage()" round size="default">Chat</ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="3" size-xl="3" style="min-height: 60vh; padding: 0 !important;">
+          <ion-content [fullscreen]="false">
+            <ion-card>
+              <ion-list-header style="display: block; text-align: center;">
+                <ion-label>
+                  <h1>
+                    Events | Chat
+                  </h1>
+                </ion-label>
+              </ion-list-header>
+              <ion-list id="chat" style="padding-top: 0 !important;">
+                    <ion-item>
+                      Chat is empty, write something...
+                    </ion-item>
+              </ion-list>
+            </ion-card>
+          </ion-content>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  
+  <ion-footer>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button (click)="setUser(0)" tab="user1">
+            <ion-label>
+              <h2>User 1</h2>
+            </ion-label>
+          </ion-tab-button>
+          <ion-tab-button (click)="setUser(1)" tab="user2">
+            <ion-label>
+              <h2>User 2</h2>
+            </ion-label>
+          </ion-tab-button>
+          <ion-tab-button (click)="setUser(2)" tab="user3">
+            <ion-label>
+              <h2>User 3</h2>
+            </ion-label>
+          </ion-tab-button>
+          <ion-tab-button (click)="setUser(3)" tab="user4">
+            <ion-label>
+              <h2>User 4</h2>
+            </ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
     </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  </ion-footer>
+</ion-app>  

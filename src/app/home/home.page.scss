@@ -25,3 +25,28 @@
 #container a {
   text-decoration: none;
 }
+
+
+@media screen and (orientation:portrait) {
+  iframe {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (orientation:landscape) and (max-width:1000px) {
+  iframe {
+    aspect-ratio: 16 / 9;
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media screen and (orientation:landscape) and (min-width:1000px) {
+  iframe {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    width: 100%;
+  }
+}
